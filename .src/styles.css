@@ -1,0 +1,19 @@
+.content-flow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    background-color: #4c4a52;
+    border-radius: 16px;
+
+}
+.section-title {
+    margin-bottom: 10px;
+}

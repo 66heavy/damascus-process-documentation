@@ -1,49 +1,75 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 0 20px;
-    margin: 0;
-    background-color: hsl(252, 5%, 18%);
-    color: #d4d5d6;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 0 20px;
+	margin: 0;
+	background-color: #dbd6cd;
+	color: #000000;
+}
+#navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-right: 4px solid #4c4a52;
+	border-bottom: 4px solid #4c4a52;
+}
+.fade-in {
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	left: 20%;
+	opacity: 0;
+	visibility: hidden;
+	transition:
+		opacity 0.5s ease,
+		visibility 05s ease;
+	background-color: rgba(59, 59, 59, 0.7);
+	border-radius: 10px;
+	color: rgb(219, 214, 205, 1);
+}
+.main-section:hover .fade-in {
+	opacity: 1;
+	visibility: visible;
 }
 .content-flow {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 620px;
-    min-width: 400px;
-    width: 100%;
-    margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	max-width: 620px;
+	min-width: 400px;
+	width: 100%;
+	margin: 20px;
 }
 .main-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 300px;
-    height: 300px;
-    background-color: #4c4a52;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(45deg, rgb(0, 0, 0), rgb(#dbd6cd) 30%);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+	overflow: hidden;
 }
 .main-section img {
-    width:80%;
-    height: 80%;
-    object-fit: cover;
-    vertical-align: center;
-    border-radius: 15px;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.26);
-    margin: 10px;
-   }
+	width: 80%;
+	height: 80%;
+	object-fit: cover;
+	vertical-align: center;
+	border-radius: 15px;
+	box-shadow: 0 8px 8px rgba(0, 0, 0, 0.26);
+	margin: 10px;
+}
 .section-title {
-    margin: 2px 0 10px 0;
-    text-align: center;
-   background-color: #ffffff00;
-   width: 100%;
-   height: fit-content;
-   color: #d4d5d6;
+	margin: 2px 0 10px 0;
+	text-align: center;
+	background-color: #ffffff00;
+	width: 100%;
+	height: fit-content;
+	color: #d4d5d6;
 }

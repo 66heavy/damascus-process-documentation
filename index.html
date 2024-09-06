@@ -9,7 +9,18 @@
 		<main id="main-doc">
 			<nav id="navbar">
 				<header>Click here</header>
-				<p></p>
+				<ul>
+					<span><li><a class="nav-link" href="#ore">Sourcing Raw Materials</a></span>
+					<li>
+						<a class="nav-link" href="#bloomery">Smelting, and the Bloomery</a>
+					</span>
+					<li>
+						<a class="nav-link" href="#carbonization">Chemistry Inside</a>
+					</span>
+					<li><a class="nav-link" href="#folding">Folding the Steel</a></span>
+					<span><li><a class="nav-link" href="#finished-steel">Finished Billet</a>
+					</span>
+				</ul>
 			</nav>
 			<div class="content-flow">
 				<section class="main-section" id="ore">
@@ -17,23 +28,34 @@
 					<img
 						src=".src\assets\iron-ore-texture.jpg"
 						alt="closeup of a pile of iron ore" />
-					<div class="fade-in"><p>blah blah placeholder</p></div>
+					<div class="text-box fade-in"><p>The process begins at the mine, where workers harvest iron ore from igneous rock deposits.</p></div>
 				</section>
 
 				<section class="main-section" id="bloomery">
 					<header class="section-title">Bloomery</header>
 					<img src=".src\assets\bloom2.jpg" alt="a red clay bloomery" />
+					<div class="text-box fade-in">
+						<p>
+							The bloomery is a large clay furnace, typically heated with a coal or
+							charcoal. It is used to bring iron ore from it's natuiral state into a
+							finished steel billet.
+						</p>
+					</div>
 				</section>
 
 				<section class="main-section" id="carbonization">
 					<header class="section-title">Carbonization</header>
 					<img src=".src\assets\bloomery-melting.jpg" alt="melted metal" />
-
-					<ul name="smelting-problems">
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
+					<div class="text-box fade-in">
+						<label for="smelting-problems">Smelting</label>
+						<ul name="smelting-problems" class="fade-in">
+							<li>oxidation can cause cold shuts</span>
+							<li>impurities can prevent</span>
+							<li>hot stuff can be bad</span>
+							<li>the hot metal isn't fun to drink</span>
+							<li>it is very bright and can hurt your eyes</span>
+						</ul>
+					</div>
 				</section>
 
 				<section class="main-section" id="folding">
@@ -41,12 +63,15 @@
 					<img
 						src=".src\assets\steel-folding.jpg"
 						alt="a blacksmith folding steel" />
+					<div class="text-box fade-in"><p></p></div>
 				</section>
-				<section class="main-section" id="finished_steel">
+
+				<section class="main-section" id="finished-steel">
 					<header class="section-title">Finished Steel</header>
 					<img
 						src=".src\assets\damascus-billet.jpg"
 						alt="a finished damascus billet" />
+					<div class="text-box fade-in"><p></p></div>
 				</section>
 			</div>
 		</main>

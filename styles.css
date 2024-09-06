@@ -15,20 +15,28 @@ body {
 	left: 0;
 	border-right: 4px solid #4c4a52;
 	border-bottom: 4px solid #4c4a52;
+	padding-left: 10px;
+	padding-bottom: 10px;
 }
-.fade-in {
+#navbar li {
+border-bottom: 3px solid black;
+border-radius: 4px;
+}
+/*make the text-box fade in on hover*/
+.text-box {
 	position: absolute;
 	width: 400px;
 	height: 250px;
-	left: 20%;
-	opacity: 0;
-	visibility: hidden;
-	transition:
-		opacity 0.5s ease,
-		visibility 05s ease;
+	left: 25%;
 	background-color: rgba(59, 59, 59, 0.7);
 	border-radius: 10px;
 	color: rgb(219, 214, 205, 1);
+}
+/*end-state of hover transition*/
+.fade-in {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s ease;
 }
 .main-section:hover .fade-in {
 	opacity: 1;
